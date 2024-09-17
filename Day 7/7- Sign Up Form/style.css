@@ -66,18 +66,27 @@ html {
 
       button {
         position: absolute;
-        top: 60%;
+        top: 50%;
         left: 50%;
         transform: translateX(-50%);
         width: 16rem;
         height: 5rem;
         background-color: transparent;
-        border: 0.1rem solid #fff;
-        text-transform: uppercase;
+        border: 0.3rem solid #fff;
+        font-size: 2rem;
+        /* text-transform: uppercase; */
         letter-spacing: 0.1rem;
         color: #fff;
         border-radius: 3rem;
         cursor: pointer;
+        transition: top 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+
+        &:hover {
+          background-color: #eee;
+          color: var(--second-color);
+          font-weight: bold;
+          transition: 0.3s ease;
+        }
       }
     }
 
@@ -149,11 +158,20 @@ html {
         background-color: var(--second-color);
         border: none;
         border-radius: 3rem;
-        text-transform: uppercase;
+        font-size: 2rem;
+        /* text-transform: uppercase; */
         letter-spacing: 0.1rem;
         color: #fff;
         margin-top: 3rem;
         cursor: pointer;
+        transition: 0.3s ease;
+
+        &:hover {
+          font-weight: bold;
+          background-color: #eee;
+          color: var(--first-color);
+          border: 0.3rem solid var(--second-color);
+        }
       }
     }
   }
@@ -169,4 +187,8 @@ html {
 
 .container.change .signup-form {
   left: 40rem;
+}
+
+.container.change .green-bg button {
+  top: 60%;
 }
