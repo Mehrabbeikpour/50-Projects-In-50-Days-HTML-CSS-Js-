@@ -7,6 +7,7 @@
 :root {
   --primary-color: #000;
   --secondary-color: #fff;
+  --bg-clock: #f3f3f3;
 }
 
 html {
@@ -16,6 +17,7 @@ html {
 html.dark {
   --primary-color: #fff;
   --secondary-color: #333;
+  --bg-clock: #161616;
 }
 
 html.dark {
@@ -56,8 +58,10 @@ body {
 
 .clock {
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
+  background-color: var(--bg-clock);
+  border-radius: 50%;
 }
 
 .needle {
